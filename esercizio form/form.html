@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Esercizio FORM</title>
+</head>
+
+<body>
+    <form action="demo.php" method="post">
+        <h1>Esercizio</h1>
+        <p>I campi obbligatori sono contrassegnati da <strong><abbr title="rischiesto">*</abbr></strong></p>
+
+        <section>
+            <label for="mail">
+                <span>Email:</span>
+                <strong><abbr title="rischiesto">*</abbr></strong>
+            </label>
+
+            <input type="email" id="mail" name="usermail" autofocus required>
+            </section>
+       
+        <section>
+            <label for="keyword">
+                <span>Password:</span>
+                <strong><abbr title="rischiesto">*</abbr></strong>
+            </label>
+    
+            <input type="password" id="keyword" name="password" autofocus required>
+            </section>
+
+        <section>
+            <label for="name">
+                <span>Nome e Cognome:</span>
+                <strong><abbr title="rischiesto">*</abbr></strong>
+            </label>
+    
+            <input type="text" id="name" name="nome" autofocus required>
+            </section>
+
+        <section>
+            <label for="date">
+                <span>Data di nascita:</span>
+                <strong><abbr title="rischiesto">*</abbr></strong>
+            </label>
+    
+            <input type="date" id="date" name="date" min="01-01-1900" max="31-12-2021" autofocus required>
+            </section>
+
+        <section>
+            <label for="number">
+                <span>Numero di telefono:</span>
+                <strong><abbr title="rischiesto">*</abbr></strong>
+            </label>
+    
+            <input type="text" id="number" name="number" min="8" max="11" autofocus required>
+            </section>
+
+     <section>
+
+        <fieldset>
+            <legend> Tipo di abbonamento:</legend>
+            <ul>
+                <li> 
+                    <label for="abbonamento">
+                        <input type="radio" id="abbonamento" name="abbonamento" value="free">
+                            Piano free
+                        </input>
+                    </label>
+                </li>
+                    <li>
+                        <label for="abbonamento">
+                        <input type="radio" id="abbonamento" name="abbonamento" value="3">
+                            3,99€ al mese
+                        </input>
+                        </label>
+                    </li>
+                    <li> 
+                        <label for="abbonamento">
+                            <input type="radio" id="abbonamento" name="abbonamento" value="20">
+                                20,99€ sei mesi
+                            </input>
+                        </label>
+                    </li>
+                    <li> 
+                        <label for="abbonamento">
+                            <input type="radio" id="abbonamento" name="abbonamento" value="40">
+                                40,99€ annui
+                            </input>
+                        </label>
+                    </li>
+                    
+            </ul>
+        </fieldset>
+     </section>
+
+    
+     <section>
+         <label for="pro"> Aggiungere i vantaggi della versione PRO
+             <input type="checkbox" id="pro" name="proversion" value="proversion" checked>
+         </label>
+     </section>
+
+     <section>
+
+         <h2>Carta di credito:</h2>
+
+        <label for="cc">
+            <span>Numero carta:</span>
+            <strong><abbr title="rischiesto">*</abbr></strong>
+        </label>
+
+        <input type="text" id="cc" name="cc" min="16" max="16" autofocus required>
+
+        <label for="cc">
+            <span>CVC:</span>
+            <strong><abbr title="rischiesto">*</abbr></strong>
+        </label>
+
+        <input type="text" id="cc" name="cc" min="3" max="3" autofocus required>
+
+        <label for="cc">
+            <span>Data di scadenza:</span>
+            <strong><abbr title="rischiesto">*</abbr></strong>
+        </label>
+
+        <input type="date" id="cc" name="cc" min="01-01-2022" max="31-12-2032" autofocus required>
+     </section>
+
+     <section>
+         <label for="fatturazione">
+             <span>Indirizzo di fatturazione:</span>
+             <strong><abbr title="richiesto">*</abbr></strong>
+         </label>
+
+         <input type="textarea" id="fatturazione" cols="40" name="fatturazione" autofocus required>
+     </section>
+
+    </form>
+</body>
+
+</html>
