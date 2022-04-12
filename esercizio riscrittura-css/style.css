@@ -1,0 +1,18 @@
+:root {
+    --std-background-color: violet;
+    --std-alt-background-color: yellow;
+  }
+
+body {
+    background-color: #011212;
+    background-color: var(--std-background-color, violet) ;
+
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #ff8800;
+    background-color: var(--std-alt-background-color, yellow) ;
+}
