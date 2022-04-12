@@ -62,16 +62,16 @@
 		<label for="form-cc">Numero Carta
             <strong><abbr title="richiesto">*</abbr></strong>
         </label>
-		<input type="text" id="form-cc" name="cc" minlenght="16" maxlenght="16" required/>
+		<input type="text" id="form-cc" name="cc" pattern="[0-9]{13,19}" required/>
 		<label for="form-cvc">CVC
             <strong><abbr title="richiesto">*</abbr></strong>
         </label>
-		<input type="text" id="form-cvc" name="cvc" minlenght="3" maxlenght="3" required/>
+		<input type="text" id="form-cvc" name="cvc" pattern="[0-9]{3,4}" required/>
 		<label for="form-exp">Scadenza
             <strong><abbr title="richiesto">*</abbr></strong>
         </label>
 		<input id="form-exp" name="exp" type="date"/>
-		<label for="form-address">Indirizzo di fatturazione
+		<label for="form-address">Indirizzo di fatturazione5
             <strong><abbr title="richiesto">*</abbr></strong>
         </label>
 		<input type="text" id="form-address" name="address"/>
