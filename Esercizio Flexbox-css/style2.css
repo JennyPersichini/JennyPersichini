@@ -1,0 +1,33 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    }
+
+.sidebar {
+    width: 200px ;
+    height: 100% ;
+    position: relative;
+    background-color: rgb(191, 156, 185);
+    border: 2px solid black ;
+}
+
+header {
+        width: 190px ;
+        border: 2px solid black ;
+    }
+    
+a {
+        color: #2b2b2b
+    }
+    
+a:hover {
+        color: #2b2bb2
+    }
+    
+footer {
+    display: flex;
+    flex-flow:column ;
+    align-items: center ;
+    justify-content: space-between;
+}
