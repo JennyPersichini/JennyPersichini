@@ -1,0 +1,62 @@
+body, html {
+    width: 99%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 50px;
+}
+
+#card {
+    border: 2px solid rgb(240, 249, 0);
+    border-radius: 2%;
+    width: 320px;
+    background-color: rgb(242, 255, 159);
+    box-shadow: 10px 10px 10px orange;
+
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 99%;
+        width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container {
+        height: 99%;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+}
