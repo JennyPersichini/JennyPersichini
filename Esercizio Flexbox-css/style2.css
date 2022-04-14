@@ -1,13 +1,13 @@
 
-main {
-    display: flex;
-    flex-direction: column;
-    }
+
+    
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     width: 200px ;
     height: 100% ;
-    position: relative;
+    position: fixed;
     background-color: rgb(191, 156, 185);
     border: 2px solid black ;
 }
