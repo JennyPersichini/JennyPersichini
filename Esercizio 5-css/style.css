@@ -1,0 +1,25 @@
+.container {
+    width: 330px;
+    height: 100%;
+    border: 1px solid gray;
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    padding: 0 5%;
+}
+
+.item>p {
+    padding-left: 5%;
+}
+
+.link {
+    padding: 5%;
+}
+
+a {
+    margin-inline: 5%;
+}
