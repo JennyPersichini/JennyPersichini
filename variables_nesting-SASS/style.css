@@ -1,0 +1,42 @@
+.container {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .exercise-title {
+  color: green;
+  text-decoration: underline;
+}
+
+.container .tabella {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .tabella article {
+  border: 1px solid green;
+}
+
+.container .tabella .rosso {
+  color: red;
+}
+
+.container .tabella .blu {
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */
