@@ -3,7 +3,12 @@ $color-secondary: blue;
 $color-tertiary: green;
 
 @mixin font {
-    font-size: 1rem;
+    @mixin article($color, $bordercol, $fontsize:1rem , $bordersize:1px solid) {
+        color: $color;
+        border-color: $bordercol;
+        font-size: $fontsize;
+        border: $bordersize ;
+    }
 }
 
 .container {
@@ -21,17 +26,18 @@ $color-tertiary: green;
         margin: 10px;
         display: flex;
         flex-direction: row;
+        width: 100%;
 
         article {
             border: 1px solid $color-tertiary;
         }
 
         .rosso {
-            color: $color-primary;
+            @include article($color-primary,$color-tertiary,$fontsize:1rem,$bordersize:1px solid);
         }
 
         .blu {
-            color: $color-secondary;
+            @include article($color-secondary,$color-tertiary,$fontsize:1rem,$bordersize:1px solid);
         }
     }
 
@@ -42,7 +48,4 @@ $color-tertiary: green;
         color: $color-secondary;
     }
 
-    article{
-        @include font;
-    }
 }
