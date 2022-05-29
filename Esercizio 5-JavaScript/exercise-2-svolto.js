@@ -1,16 +1,16 @@
 function calculateSalary(role) {
     switch(role) {
         case "ceo":
-            console.log('2200€');
+            return 2200;
 
             case "manager" || "cto":
-                console.log('1800€');
+                return 1800;
 
                 case "developer":
-                    console.log('1500€');
+                    return 1500;
 
                     default:
-                        console.log('1000€');
+                        return 1000;
     }
   }
   
