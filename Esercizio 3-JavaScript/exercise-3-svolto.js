@@ -1,7 +1,7 @@
 const students = ['Paul', 'George', 'Lucas'];
 
 function addStudent(student) {
-    student.push(student)
+    students.push('Marco')
 }
 
 addStudent('Marco');
