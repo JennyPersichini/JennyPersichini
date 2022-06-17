@@ -1,6 +1,6 @@
 function sumUntil(maxValue) {
     let somma = 0;
-   for(let i=0; i<6; i++) {
+   for(let i=0; i<=maxValue; i++) {
        somma += i ;
    }
    return somma ;

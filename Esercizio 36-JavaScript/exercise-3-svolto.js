@@ -4,8 +4,8 @@ class Person {
     this.lastName = lastName;
   }
 
-  static fromObject(obj) {
-    console.log(obj instanceof Person);
+  static fromObject = (obj) => {
+    return new Person(obj.firstName, obj.lastName)
   }
 
 }
