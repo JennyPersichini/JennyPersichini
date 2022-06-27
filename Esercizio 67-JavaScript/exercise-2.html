@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center;"></div>
+  </body>
+</html>
+
+<script>
+  fetch('https://jsonplaceholder.typicode.com/todos/4')
+  .then((response) => response.json())
+  .then(todo => {
+    const title = document.createElement('h2')
+    const checkbox = document.createElement('input')
+    checkbox.type = 'checkbox'
+    titolo.innerHTML = todo.title
+    checkbox.checked = todo.completed
+    document.getElementById('container').append(titolo, checkbox)
+  })
+</script>
