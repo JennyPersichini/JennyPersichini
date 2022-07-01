@@ -1,0 +1,47 @@
+<html>
+
+<body>
+  <div id="container">
+    <h2>Person's Form</h2>
+    <form id="person-form">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
+
+<script>
+
+  const form = document.querySelector('#person-form');
+
+  function initForm(dinamic) {
+    const firstNameLabel = document.createElement('label').textContent = 'first name';
+    const lastNameLabel = document.createElement('label').textContent = 'last name';
+    const ageLabel = document.createElement('label').textContent = 'age';
+    const firstNameInput = document.createElement('input').className = 'first-name';
+    const lastNameInput = document.createElement('input').className = 'last-name';
+    const ageInput = document.createElement('age').className = 'age';
+    form.append(firstNameLabel, firstNameInput, lastNameLabel, lastNameInput, ageLabel, ageInput)
+    dinamic.preventDefault();
+  }
+
+  function submitPersonForm(dinamic) {
+    const firstName = document.querySelector('.first-name').value;
+    const lastName = document.querySelector('.last-name').value;
+    const age = document.querySelector('.age').value;
+
+    const person = {
+      firstName: firstName,
+      lastName: lastName,
+      age: age,
+    }
+
+    console.log(person);
+    dinamic.preventDefault();
+  }
+
+  window.addEventListener('load', initForm);
+  const bottone = document.querySelector('button').addEventListener('click', submitPersonForm);
+
+</script>
